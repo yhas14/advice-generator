@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    
+
+    <title>Frontend Mentor | Advice generator app</title>
+    <script src="script.js" defer></script>
+    <!-- defer attribute waits for html file to load before js file-->
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Advice #</h1>
+      <p id="text">
+      </p>
+      <picture>
+        <!-- Using picture tag to toggle two images based on viewport-->
+        <source media="(min-width:768px)" srcset="./images/pattern-divider-desktop.svg">
+        <img src="./images//pattern-divider-mobile.svg" alt="mobile image">
+        </source>
+      </picture>
+      <div>
+        <button onclick="fetchAdvice()">
+          <img src="./images/icon-dice.svg" alt="icon">
+        </button>
+      </div>
+    </div>
+
+  </body>
+</html>
